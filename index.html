@@ -1,0 +1,46 @@
+
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+    <title>self introduction</title>
+    
+</head>
+<body>
+    <h1 style="text-align:center">Self Introduction</h1>
+    <p>Enter Your Name: <input type="text" id="name" placeholder="Enter Your Name" /></p>
+    <br />
+    <p>Enter Your Father's Name: <input type="text" id="father" placeholder="Enter Your Father's Name" /></p>
+    <br />
+    <p>Enter Your Mother's Name: <input type="text" id="mother" placeholder="Enter Your Mother's Name" /></p>
+    <br />
+    <p>Enter Your School Name: <input type="text" id="school" placeholder="Enter Your School Name" /> Percentage : <input type="text" id="10thpercentage" placeholder="12th Percentage" /></p>
+    <br />
+    <p>Enter Your College Name: <input type="text" id="college" placeholder="Enter Your College Name" /> Percentage : <input type="text" id="clgpercentage" placeholder="College Percentage"/></p>
+    <br />   
+    <p>Short Term Goal: <input type="text" id="short" placeholder="Short term goal"></p>
+    <br>
+    <p>Long Term Goal: <input type="text"id="long" placeholder="long term goal"></p>
+    <br>      
+    <button onClick="out()">Click to view</button>
+    
+    <h3 id="output"></h3>
+    
+    <script type="text/javascript" charset="utf-8">
+    function out(){
+        var print;
+        var output;
+        n=document.getElementById("name").value;
+        f=document.getElementById("father").value;
+        m=document.getElementById("mother").value;
+        s=document.getElementById("school").value;
+        c=document.getElementById("college").value;
+        p1=document.getElementById("10thpercentage").value;
+        p2=document.getElementById("clgpercentage").value;
+        print=" Welcome Sir, My Name is " + n + " My Father Name is " + f + " My Mother Name is " + m + " I have completed my schooling in " + s + " with " + p1 + " Percentage. and I have completed my College in " + c + " with " + p2 + " percentage."
+        output=document.getElementById("output").innerHTML=print;
+    }
+    </script>    
+    
+</body>
+</html>
